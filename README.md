@@ -17,7 +17,6 @@ Control two motors using rosserial with custom message.
 2. GND and 3.3V wires are to power the encoder. Connect them to the Arduino.
 
 3. C1 and C2 are channel wires for encoder outputs. 
-
 * Motor 1 : C1 - Pin 2 , C2 - Pin 3
 * Motor 2 : C1 - Pin 4, C2 - Pin 5
 
