@@ -50,9 +50,7 @@ catkin_make
 ```
 	 rm -r ~/Arduino/libraries/ros_lib
 	 rosrun rosserial_arduino make_libraries.py /home/yug/Arduino/libraries/
-        ```
-
-
+```
 ### Run the motors 
 ```
 Upload the code "Run" to Ardunio Uno.
@@ -68,6 +66,3 @@ rostopic pub /control_motor rosserial_encoder_motor/motor "direction: 70 speed: 
 * Speed : 0 to 255
 
 * Name : 1 or 2
-
-
-
