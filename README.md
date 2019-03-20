@@ -46,7 +46,7 @@ catkin_make
 ```
 
 * Follow the installation steps : [here](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
-If already installed then just type these :
+* If already installed then just type these :
 ```
 rm -r ~/Arduino/libraries/ros_lib
 rosrun rosserial_arduino make_libraries.py /home/yug/Arduino/libraries/
