@@ -32,11 +32,10 @@ Do not forget to make the ground common of Arduino and L298N.
 ### Running one motor
 Copy Encoder Library to Arduino Libraries :
 Open terminal :
-
-`cd ~/Arduino_Encoder_Motors`
-`mv Encoder /home/user/Documents/arduino-1.8.7/libraries/`
-
-Open sketch and upload. Open terminal and check out the encoder readings.
+```
+cd ~/Arduino_Encoder_Motors
+mv Encoder /home/user/Documents/arduino-1.8.7/libraries/
+```
 
 ### Add ROS Serial 
 In a new terminal :
@@ -46,9 +45,9 @@ cd catkin_ws/
 catkin_make
 ```
 
-* Follow the installation steps : [http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup]
+* Follow the installation steps : [here](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
 	If already installed then just type these :
-	```
+```
 	 rm -r ~/Arduino/libraries/ros_lib
 	 rosrun rosserial_arduino make_libraries.py /home/yug/Arduino/libraries/
         ```
