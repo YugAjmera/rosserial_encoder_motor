@@ -46,23 +46,21 @@ catkin_make
 ```
 
 * Follow the installation steps : [here](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
-	If already installed then just type these :
+If already installed then just type these :
 ```
-	 rm -r ~/Arduino/libraries/ros_lib
-	 rosrun rosserial_arduino make_libraries.py /home/yug/Arduino/libraries/
+rm -r ~/Arduino/libraries/ros_lib
+rosrun rosserial_arduino make_libraries.py /home/yug/Arduino/libraries/
 ```
 ### Run the motors 
-```
 Upload the code "Run" to Ardunio Uno.
+```
 roscore
 rosrun rosserial_python serial_node.py /dev/ttyUSB0
 rostopic pub /control_motor rosserial_encoder_motor/motor "direction: 70 speed: 250 name: 1" 
 ```
 
 * Direction : 
- Forward : 70 
- Backward : 66
-
+ 	* Forward : 70 
+ 	* Backward : 66
 * Speed : 0 to 255
-
 * Name : 1 or 2
