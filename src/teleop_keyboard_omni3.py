@@ -73,7 +73,7 @@ if __name__=="__main__":
     pubr = rospy.Publisher('/control_motor', motor, queue_size=1)
 
 
-    speed = 100
+    speed = 250
     x = 0
     y = 0
     z = 0
@@ -102,6 +102,11 @@ if __name__=="__main__":
                 th = 0
                 if (key == '\x03'):
                     break
+	    
+	    if(y==2):
+		speed=100
+	    if(y==-2):
+		speed=100
 
             vell = motor()
 
@@ -111,7 +116,7 @@ if __name__=="__main__":
 		vell.direction = 66
 		x=-x 
 	    vell.speed = speed*x
-            vell.name=2
+            vell.name=1
 	
 	    velb = motor()
 
@@ -121,7 +126,7 @@ if __name__=="__main__":
 		velb.direction=66
 		y=-y 
 	    velb.speed=speed*y
-            velb.name=3
+            velb.name=2
 	
 	    velr = motor()
 
@@ -131,7 +136,7 @@ if __name__=="__main__":
 		velr.direction=66
 		z=-z 
 	    velr.speed=speed*z
-            velr.name=1
+            velr.name=3
 		
 	    print (vell)
 	    print(velb)
@@ -141,4 +146,6 @@ if __name__=="__main__":
 	    publ.publish(vell)
 	    pubb.publish(velb)
 	    pubr.publish(velr)
+	
+	    speed=250
 
