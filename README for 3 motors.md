@@ -56,6 +56,6 @@ Upload the code "Run_3_motors" to Ardunio Mega.
 ```
 roscore
 rosrun rosserial_python serial_node.py /dev/ttyUSB0
-python teleop_keyboard.py
+python teleop_keyboard_omni3.py
 ```
 
